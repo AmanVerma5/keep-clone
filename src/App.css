@@ -11,3 +11,16 @@ body{
     margin-top:1rem;
         
 }
+
+@media only screen and (max-width: 450px){
+    .display-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .display-container .MuiPaper-root{
+        width:70%;
+    }
+}
