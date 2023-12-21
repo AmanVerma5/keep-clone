@@ -1,0 +1,39 @@
+.note-bar{
+    margin-top:2rem;
+    display: flex;
+    justify-content: center;
+    height:40px;
+}
+.note-bar input , .note-input input{
+    background-color: #212125;
+    width:70%;
+    border:2px solid rgb(65, 65, 65);
+    border-radius: 0.5rem;
+    color:white;
+    font-size: 20px;
+    padding-left:1.5rem ;
+}
+
+.note-bar input::placeholder{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.note-input{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.note-input input{
+    width:70%;
+    font-size: 20px;
+}
+.note-input textarea{
+    margin-top: 0.1rem;
+    width:72%;
+    background-color: #212125;
+    color:white;
+    border:2px solid rgb(65, 65, 65);
+    border-radius: 0.5rem;
+}

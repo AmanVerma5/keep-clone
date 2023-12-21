@@ -1,0 +1,17 @@
+.css-1ri6ub7-MuiPaper-root-MuiCard-root{
+    background-color: #212125 !important;
+    border:2px solid rgb(65, 65, 65);
+    color:#e9ebe0 !important;
+    
+}
+.id{
+    display: none;
+}
+.css-dnrpxu-MuiCardActions-root{
+    display: flex;
+    justify-content: space-between;
+}
+.MuiPaper-root{
+    border:2px solid rgb(65, 65, 65);
+    color:#e9ebe0 !important;
+}

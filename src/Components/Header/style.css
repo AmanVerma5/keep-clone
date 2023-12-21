@@ -1,0 +1,124 @@
+.navbar{
+    margin:0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    border-radius: 50%;
+    padding:1rem;
+}
+.menu:hover{
+    background-color: rgb(92, 92, 92);
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.keep{
+    color:rgb(223, 221, 221);
+    display: flex;
+    align-items: center ;
+    padding-left: 0.5rem;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.menu-logo-keep{
+    display: flex;
+}
+.search-bar{
+    background-color: #525254;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    width:50%;
+   
+}
+.search-bar svg{
+    margin-left: 1rem;
+}
+.search-input{
+    margin-left: 1rem;
+    height:75%;
+    background-color: #525254;
+    color:white;
+    border: none;
+    outline: none;
+    font-size: larger;
+}
+.search-input::placeholder{
+    color:white;
+}
+.search-input:focus{
+    background-color: white;
+    color: black;
+}
+.search-bar:focus-within{
+    background-color: white;
+}
+.search-bar:focus-within .feather-search{
+    stroke:#525254;
+}
+.search-bar:focus-within .search-input::placeholder{
+    color:#737374;
+    font-weight:lighter;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    
+}
+.btns svg{
+    padding: 1rem 0.8rem;  
+    border-radius: 50%;
+}
+.list{
+    margin-left: 1rem;
+}
+
+.btns svg:hover{
+    background-color: rgb(92, 92, 92);
+}
+.tooltip{
+    background-color: #525254;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+.tooltip-inner{
+    padding:0.2rem;
+}
+
+
+@media only screen and (max-width: 650px){
+    .menu, .btns svg{
+        padding: 1rem 0.5rem;
+    }
+    .keep{
+        font-size: smaller;
+    }
+    .btns{
+        margin-right:0 ;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .search-bar{
+        width:60%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .search-bar{
+        width: fit-content;
+    }
+    hr{
+        width: 100%;
+    }
+}
