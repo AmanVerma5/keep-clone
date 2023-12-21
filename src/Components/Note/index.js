@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -14,9 +14,17 @@ export default function Note({ note, setNotes }) {
   const [editedTitle, setEditedTitle] = useState(note.title);
   const [editedContent, setEditedContent] = useState(note.content);
 
+  console.log(note.title)
+ // console.log('Save edit:', editedTitle, editedContent);
+
   function deleteNote() {
     setNotes((prevNotes) => prevNotes.filter((n) => n.id !== note.id));
   }
+  useEffect(()=>{
+    setEditedTitle(note.title)
+    setEditedContent(note.content)
+    console.log('Save edit:', editedTitle, editedContent);
+  },[note])
 
   function handleColorChange(color) {
     setNotes((prevNotes) =>

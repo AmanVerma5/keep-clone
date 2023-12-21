@@ -116,7 +116,7 @@
 }
 @media only screen and (max-width: 500px){
     .search-bar{
-        width: fit-content;
+        width: min-content;
     }
     hr{
         width: 100%;
